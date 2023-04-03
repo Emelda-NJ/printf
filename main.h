@@ -9,9 +9,6 @@
 #define BUFF_SIZE 1024
 
 /* FLAGS */
-/* define different flag options used in the
- * format specifier for printf function.
- */
 #define F_MINUS 1
 #define F_PLUS 2
 #define F_ZERO 4
@@ -19,9 +16,6 @@
 #define F_SPACE 16
 
 /* SIZES */
-/* define the different size options used in the
- * format specifier for printf function.
- */
 #define S_LONG 2
 #define S_SHORT 1
 
@@ -116,19 +110,8 @@ char buffer[],
 
 /****************** UTILS ******************/
 
-/* takes in a character and returns a boolean value
- * indicating if the character is printable
- */
 int is_printable(char);
-
-/* takes in a character and a character array (buffer) and
- * appends the hexadecimal representation of the character to the buffer.
- */
 int append_hexa_code(char, char[], int);
-
-/* takes in a character and returns a boolean value
- * indicating if the character is a digit.
- */
 int is_digit(char);
 
 long int convert_size_number(long int num, int size);
